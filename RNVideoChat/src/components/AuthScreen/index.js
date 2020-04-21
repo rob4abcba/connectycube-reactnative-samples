@@ -20,7 +20,7 @@ export default class AuthScreen extends PureComponent {
   login = currentUser => {
     const _onSuccessLogin = () => {
       const {navigation} = this.props;
-      const opponentsIds = users
+      const opponentsIds = users  // one user will come from NearbyUserDetail2.js
         .filter(opponent => opponent.id !== currentUser.id)
         .map(opponent => opponent.id);
 
