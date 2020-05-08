@@ -8,6 +8,7 @@
     "start:reset": "npm run start --reset-cache",
     "test": "jest",
     "ios": "react-native run-ios",
+    "pios": "cd ios && pod install && cd .. && react-native run-ios",
     "android": "react-native run-android",
     "android:release": "cd android && ./gradlew app:assembleRelease",
     "android:clean": "cd android && ./gradlew clean && ./gradlew cleanBuildCache",
