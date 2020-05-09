@@ -32,7 +32,7 @@ export default class AuthScreen extends PureComponent {
     };
 
     this.setIsLogging(true);
-
+console.log("index.js: abaove AuthService.login");
     AuthService.login(currentUser)
       .then(_onSuccessLogin)
       .catch(_onFailLogin)
